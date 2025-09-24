@@ -1,0 +1,334 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap');
+
+
+.work-sans-font {
+  font-family: "Work Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400px;
+  font-style: normal;
+}
+
+/* Shared Style */
+.display-flex{
+  display:flex;
+}
+
+.dark01{
+  color:#131313;
+}
+
+.dark02{
+  color:#424242;
+}
+.dark03{
+  color:#727272;
+}
+.bg-primary{
+  background-color:#FF900E10;
+}
+
+.btn-primary{
+  background-color:#FF900E;
+  color:white;
+  font-size:.98rem;
+  padding:16px 20px;
+  border-radius:6px;
+  border:none;
+  font-weight: 600;
+  height: 50px;
+  width: 140px;
+  text-align: center;
+  margin-top: 15px;
+}
+
+.section-title{
+  font-size:2.19rem;
+  font-weight: 700;
+  
+}
+
+/* Header Style */
+
+/* nav Style */
+.brand{
+  font-weight: 700;
+  font-size:2.19rem;
+}
+.navbar{
+  justify-content:space-between;
+  align-items: center;
+}
+.nav-links{
+  list-style-type:none;
+  gap:30px;
+
+}
+.nav-link{
+  text-decoration:none;
+  font-weight: 500;
+}
+
+.navbar, .banner{
+  max-width:1045px; 
+  margin:0 auto;
+}
+
+/* Banner Style */
+
+.banner img{
+  width:100%;
+}
+
+.banner-content{
+  max-width:850px;
+  text-align:center;
+  margin:0 auto 47px auto;
+}
+
+.banner-content p{
+  font-size: .78rem;
+  line-height: 20px;
+}
+
+.banner-title{
+  font-weight:700;
+  font-size:3.12rem;
+  margin-bottom:20px;
+}
+
+main{
+  max-width:1045px;
+  margin:0 auto;
+}
+
+main>section{
+  margin-top:85px;
+}
+
+/* teams */
+
+
+.teams{
+  justify-content: center;
+  align-items: center;
+  gap:57px;
+  margin:85px 47px;
+}
+
+.team{
+  display: grid;
+  grid-template-columns: repeat(2,1fr);
+  gap:15px;
+  
+}
+.team>img{
+  width:220px;
+  height: 220px;
+}
+
+
+
+.quick-list h3{
+  max-width:365px;
+}
+
+#ql{
+  font-weight: 500;
+}
+#feature{
+  color:#FF900E;
+}
+.quick-list p{
+  max-width:420px;
+  font-size: .78rem;
+  line-height: 20px;
+ 
+}
+
+/* Some Facts */
+
+.some-facts h3{
+  margin:0px;
+}
+
+.some-facts p{
+  max-width: 423px;
+  font-size: .78rem;
+  margin: 19px 0px 78px 0px;
+}
+.fact-cards{
+  display:grid;
+  grid-template-columns: repeat(4,150px);
+  justify-content:center;
+  gap: 96px;
+}
+
+.fact-card{
+  border:1px solid #FF900E;
+  border-radius:6px;
+  width:150px;
+  height:150px;
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding:35px 27px;
+}
+
+
+
+.fact-img{
+  width:35px;
+  height: auto;
+}
+
+.fact-num{
+  font-size: 2.19rem;
+  font-weight: 600;
+  margin:0px;
+  margin-top:8px;
+}
+
+.fact-name{
+  font-size:.9rem;
+  font-weight: 600;
+  margin:0px;
+  margin-top:4px;
+}
+
+
+/* Our Sponsor */
+
+.sponsor{
+  max-width:425px;
+  margin:40px auto;
+  text-align:center;
+ 
+}
+
+.sponsor p{
+  font-size:.78rem;
+  font-weight: normal;
+
+} 
+
+.sponsores img{
+  width:120px;
+  height:auto;
+  filter:grayscale(100%); 
+  
+}
+
+
+.sponsor-img{
+   display:grid;
+   justify-content:space-between;
+   grid-template-columns: repeat(5,100px);
+  
+}
+
+
+/* Features Style  */
+
+.features{
+  gap:95px;
+  justify-content:center;
+}
+
+.feature h1{
+  border-left:5px solid #FF900E;
+  padding-left:26px;
+  margin:0px;
+  width:347px;
+}
+
+.feature p{
+  font-size:.74rem;
+  font-weight: normal;
+  line-height: 20px;
+}
+
+.feature h3{
+  font-size:.92rem;
+  font-weight: 600;
+  margin:0px;
+}
+
+.feature-card{
+  padding:23px;
+  box-shadow: 0px 4px 30px rgba(0, 0, 0, 0.06);
+  margin-bottom:16px;
+  border-radius: 6px;
+}
+
+.features img {
+    
+  width:592px;
+  height: 765px;
+
+}
+
+.exp-btn{
+  width:267px;
+  height:155px;
+  font-size:1.2rem;
+  font-weight:500;
+  margin-left:-70px;
+  margin-top:-100px;
+  
+}
+
+#exp-badge{
+  font-size:3.16rem;
+  font-weight:700;
+}
+/* Responsive Media Query */
+
+@media screen and (max-width:576px){
+  .navbar,.nav-links,.teams{
+    flex-direction:column;
+  }
+  .team,.fact-cards,.sponsor-img{
+    grid-template-columns: repeat(1,1fr);
+  }
+  .team img{
+    width:100%;
+    height: auto;
+  }
+
+  .teams{
+    margin:85px 7px;
+  }
+
+  .fact-cards{
+    justify-items: center;
+  }
+
+  .some-fact{
+    width:477px;
+    margin:0px 75px;
+  }
+
+  .sponsor-img{
+    width:120px;
+    gap:10px;
+    margin:auto;
+  }
+
+}
+
+
+/* Medium Size Device */
+
+@media screen and (min-width:576px) and (max-width:992px){
+  .teams {
+    flex-direction:column;
+    gap:0px;
+  }
+
+  .features{
+    margin: 0px auto;
+  }
+
+}
